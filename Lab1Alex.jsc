@@ -1,0 +1,20 @@
+@Java
+
+@@
+//(C) A+ Computer Science
+
+method main()
+{
+  Jeroo bobby = new Jeroo(0,0);
+  bobby.turn(RIGHT);
+  bobby.hop();
+  bobby.turn(LEFT);
+  bobby.hop();
+  while(!bobby.isNet(AHEAD)) {
+    bobby.hop();
+    bobby.turn(RIGHT);
+    bobby.hop();
+    bobby.turn(LEFT);
+  }
+  bobby.turn(RIGHT);
+}
